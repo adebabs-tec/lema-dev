@@ -20,7 +20,7 @@ const config: Config = {
         lemaPurpleLight: "#F1F0FF",
         lemaYellow: "#FAE27C",
         lemaYellowLight: "#FEFCE8",
-      }
+      },
     },
   },
   plugins: [],
