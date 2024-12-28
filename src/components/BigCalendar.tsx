@@ -24,7 +24,7 @@ const BigCalendar: React.FC = () => {
       view={view}
       style={{ height: "98%" }}
       onView={handleOnChangeView}
-      min={new Date(2024, 11, 28, 8, 0, 0)}
+      min={new Date(2024, 11, 22, 8, 0, 0)}
       max={new Date(2022, 12, 1, 17, 0, 0)}
     />
   );
