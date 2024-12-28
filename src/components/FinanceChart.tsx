@@ -109,7 +109,7 @@ const FinanceChart = () => {
             axisLine={false}
             tick={{ fill: "#d1d5db" }}
             tickLine={false}
-            tickMargin={10}
+            tickMargin={20}
           />
           <Tooltip
             contentStyle={{ borderRadius: "10px", borderColor: "lightgray" }}
@@ -123,9 +123,14 @@ const FinanceChart = () => {
             type="monotone"
             dataKey="income"
             stroke="#c3ebfa"
-            activeDot={{ r: 8 }}
+            strokeWidth={5}
           />
-          <Line type="monotone" dataKey="expense" stroke="#CFCEFF" />
+          <Line
+            type="monotone"
+            dataKey="expense"
+            stroke="#CFCEFF"
+            strokeWidth={5}
+          />
         </LineChart>
       </ResponsiveContainer>
     </div>
