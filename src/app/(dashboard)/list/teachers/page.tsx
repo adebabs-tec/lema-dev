@@ -60,7 +60,7 @@ type Teacher = {
 const TeacherListPage = () => {
   const renderRow = (item: Teacher) => {
     return (
-      <tr>
+      <tr key={item.id}>
         <td>
           <Image
             src={item.photo}
