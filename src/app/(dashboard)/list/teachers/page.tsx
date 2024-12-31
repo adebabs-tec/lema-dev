@@ -60,8 +60,11 @@ type Teacher = {
 const TeacherListPage = () => {
   const renderRow = (item: Teacher) => {
     return (
-      <tr key={item.id}>
-        <td>
+      <tr
+        key={item.id}
+        className="border-b border-gray-200 even:bg-slate-50 text-sm hover:bg-lemaPurpleLight"
+      >
+        <td className="flex items-center gap-4 p-4">
           <Image
             src={item.photo}
             alt=""
@@ -79,17 +82,19 @@ const TeacherListPage = () => {
         <td className="hidden md:table-cell">{item.classes.join(",")}</td>
         <td className="hidden md:table-cell">{item.phone}</td>
         <td className="hidden md:table-cell">{item.address}</td>
-        <td className="flex items-center gap-2">
-          <Link href={`/list/teachers/${item.id}`}>
-            <button className="w-7 h-7 flex items-center` justify-center rounded-full bg-lemaSky">
-              <Image src="/view.png" alt="" width={16} height={16} />
-            </button>
+        <td>
+          <div className="flex items-center gap-2">
+            <Link href={`/list/teachers/${item.id}`}>
+              <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lemaSky">
+                <Image src="/view.png" alt="" width={16} height={16} />
+              </button>
+            </Link>
             {role === "admin" && (
-              <button className="w-7 h-7 flex items-center` justify-center rounded-full bg-lemaPurple">
+              <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lemaPurple">
                 <Image src="/delete.png" alt="" width={16} height={16} />
               </button>
             )}
-          </Link>
+          </div>
         </td>
       </tr>
     );
