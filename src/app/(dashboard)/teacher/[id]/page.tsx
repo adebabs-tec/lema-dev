@@ -25,27 +25,84 @@ const SingleTeachersPage = () => {
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               </p>
               <div className="flex items-center justify-between gap-2 flex-wrap text-xs font-medium">
-                <div className="">
+                <div className="w-full md:1/3 lg:w-full 2xl:w-1/3 flex items-center gap-2">
                   <Image src="/blood.png" alt="" width={14} height={14} />
-                  <span></span>
+                  <span>A</span>
                 </div>
-                <div className="">
-                  <Image src="/blood.png" alt="" width={14} height={14} />
-                  <span></span>
+                <div className="w-full md:1/3 lg:w-full 2xl:w-1/3 flex items-center gap-2">
+                  <Image src="/date.png" alt="" width={14} height={14} />
+                  <span>December 31</span>
                 </div>
-                <div className="">
-                  <Image src="/blood.png" alt="" width={14} height={14} />
-                  <span></span>
+                <div className="w-full md:1/3 lg:w-full 2xl:w-1/3 flex items-center gap-2">
+                  <Image src="/mail.png" alt="" width={14} height={14} />
+                  <span>now@email.com</span>
                 </div>
-                <div className="">
-                  <Image src="/blood.png" alt="" width={14} height={14} />
-                  <span></span>
+                <div className="w-full md:1/3 lg:w-full 2xl:w-1/3 flex items-center gap-2">
+                  <Image src="/phone.png" alt="" width={14} height={14} />
+                  <span>+234 8065213434</span>
                 </div>
               </div>
             </div>
           </div>
           {/* SMALL CARDS  */}
-          <div className=""></div>
+          <div className="flex-1 flex gap-4 justify-between flex-wrap">
+            {/* CARD  */}
+            <div className="">
+              <Image
+                src="/singleAttendance.png"
+                alt=""
+                width={24}
+                height={24}
+                className="w-4 h-4"
+              />
+              <div className="">
+                <h1 className="text-lg font-semibold"></h1>
+                <span>Attendance</span>
+              </div>
+            </div>
+            {/* CARD  */}
+            <div className="">
+              <Image
+                src="/singleBranch.png"
+                alt=""
+                width={24}
+                height={24}
+                className="w-4 h-4"
+              />
+              <div className="">
+                <h1 className="text-lg font-semibold">2</h1>
+                <span>Branches</span>
+              </div>
+            </div>
+            {/* CARD  */}
+            <div className="">
+              <Image
+                src="/singleLesson.png"
+                alt=""
+                width={24}
+                height={24}
+                className="w-4 h-4"
+              />
+              <div className="">
+                <h1 className="text-lg font-semibold">6</h1>
+                <span>Lessons</span>
+              </div>
+            </div>
+            {/* CARD  */}
+            <div className="">
+              <Image
+                src="/singleClass.png"
+                alt=""
+                width={24}
+                height={24}
+                className="w-4 h-4"
+              />
+              <div className="">
+                <h1 className="text-lg font-semibold">6</h1>
+                <span>Classes</span>
+              </div>
+            </div>
+          </div>
         </div>
         {/* BOTTOM  */}
         <div className="">schedule</div>
